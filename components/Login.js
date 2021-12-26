@@ -9,7 +9,7 @@ const Login = () => {
             <div className="flex flex-col absolute z-50 h-4/6 items-center justify-center w-full space-y-4 ">
                 <Image className="object-cover rounded-full" src="https://links.papareact.com/3pi" height={200} width={200} />
                 
-                <button className="bg-yellow-500 rounded-lg p-5 font-bold animate-pulse" onClick={authenticate}>Login to the METAVERSE</button>
+                <button className="bg-yellow-500 rounded-lg p-5 font-bold animate-pulse" onClick={() => authenticate()}>Login to the METAVERSE</button>
 
             </div>
             <div className="w-full h-screen">

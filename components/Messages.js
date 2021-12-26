@@ -9,23 +9,25 @@ const Messages = () => {
     const { user } = useMoralis()
     const endOfMessagesRef = useRef(null)
 
-    const { data, error } = useMoralisQuery(
-      "Messages",
-      (query) =>
-        query
-          .ascending("createdAt")
-          .greaterThan(
-            "createdAt",
-            new Date(Date.now() - 1000 * 60 * MINS_DURATION)
-          )
-      ,
-      [],
-      {
-        live: true,
-      }
-    );
+    // const { data, error } = useMoralisQuery(
+    //   "Messages",
+    //   (query) =>
+    //     query
+    //       .ascending("createdAt")
+    //       .greaterThan(
+    //         "createdAt",
+    //         new Date(Date.now() - 1000 * 60 * MINS_DURATION)
+    //       )
+    //   ,
+    //   [],
+    //   {
+    //     live: true,
+    //   }
+    // );
 
-    console.log(data);
+    // console.log(data);
+
+    const data = []
 
     return (
         <div className="pb-56">

@@ -7,10 +7,15 @@
   },
   "dependencies": {
     "@walletconnect/web3-provider": "^1.7.0",
+    "moralis": "^0.0.176",
     "next": "latest",
+    "rc-drawer": "^4.4.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-dropdown": "^1.9.2",
+    "react-modal": "^3.14.4",
     "react-moralis": "^0.3.11",
+    "recoil": "^0.5.2",
     "timeago-react": "^3.0.4"
   },
   "devDependencies": {
